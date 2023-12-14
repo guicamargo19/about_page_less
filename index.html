@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LESS Module project">
+    <title>Guilherme Camargo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./build/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <img class="profile-avatar" src="./src/images/Guilherme.png">
+            <div class="profile-bio">
+                <h1 class="profile-bio-name">Guilherme Ferreira Camargo</h1>
+                <h2 class="profile-bio-subtitle">Engenheiro da Computação / Desenvolvedor Full Stack Python</h2>
+                <p class="profile-bio-description">
+                    Sendo engenheiro da computação de formação, sempre adotei um pensamento analítico nos desafios vividos durante minha carreira,
+                    tendo muita habilidade na resolução de problemas e visão para novas soluções. Tenho como princípio a busca em ser a cada dia
+                    um profissional mais qualificado e preparado para o novos desafios da função e do mercado.
+                </p>
+                <ul class="skills">
+                    <li>Domínio de HTML, Python, JavaScript, CSS</li>
+                    <li>Layouts Front-end como Bootstrap, jQuery</li>
+                    <li>Pré-processadores CSS como LESS e SASS</li>
+                    <li>Automatização de tarefas como Gulp e Grunt</li>
+                    <li>Criação de microsserviços</li>
+                    <li>Integração Front-end e Back-end</li>
+                    <li>Desenvolvimento e testes com Django, Postgres e APIs</li>
+                    <li>Implantação de softwares com abordagem DevOps</li>
+                    <li>Experiência com SQL e Banco de dados</li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.instagram.com/gui.fcamargo/">
+                        <img src="./src/images/instagram.svg" alt="instagram Logo">
+                    </a>
+                </li>   
+                <li>
+                    <a href="https://www.linkedin.com/in/guilherme-ferreira-camargo/">
+                        <img src="./src/images/linkedin.svg" alt="Linkedin Logo">
+                    </a>
+                </li>   
+                <li>
+                    <a href="https://github.com/guicamargo19">
+                       <img src="./src/images/github.svg" alt="GitHub Logo">
+                    </a>
+                </li>   
+                <li>
+                    <a data-bs-toggle="modal" data-bs-target="#modal" href="#contato">
+                      <img src="./src/images/mail.svg" alt="Email logo">
+                    </a> 
+                </li>   
+            </ul>
+        </nav>
+        <nav>
+            <ul class="projects-list">
+                <li class="projects-list-item">
+                    <a href="https://site-bunka-store.vercel.app/" target="_blank">Visite o site Bunka Store</a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://site-lets-code.vercel.app/" target="_blank">Visite o site Let's Code</a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://site-kakashi-shoes.vercel.app/" target="_blank">Visite o site Kakashi Shoes</a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://site-tomoda-viagens.vercel.app/" target="_blank">Visite o site Tomoda Viagens</a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://agenda-contatos-beige.vercel.app/" target="_blank">Visite o site Agenda de contatos</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- MODAL -->
+        <div id="modal" class="modal" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Contato</h5>
+                        <button name="modal-close" type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-success collapse alert-dismissible" id="sucesso-login">
+                            <button name="alert-close" class="btn-close" data-bs-dismiss="alert"></button>
+                            Mensagem enviada. Retornarei o mais rápido possível.
+                        </div>
+                    
+                        <div class="container">
+                            <form>
+                                <label class="form-label" for="usuario_login">Nome:</label>
+                                <input class="form-control" type="text" id="usuario_login" />
+                                <label class="form-label" for="email">E-mail:</label>
+                                <input class="form-control" type="email" id="email" />
+                                <label class="form-label" for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" class="form-control" maxlength="200"></textarea>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button name="cancelar" type="button" class="btn-danger btn" data-bs-dismiss="modal">Cancelar</button>
+                        <button name="ok" type="button" class="btn-success btn" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <p>
+                2023 &copy; Guilherme Camargo - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
