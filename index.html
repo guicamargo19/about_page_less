@@ -90,25 +90,25 @@
                         <button name="modal-close" type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="alert alert-success collapse alert-dismissible" id="sucesso-login">
+                        <div class="alert alert-success collapse alert-dismissible" id="mensagem-sucesso">
                             <button name="alert-close" class="btn-close" data-bs-dismiss="alert"></button>
                             Mensagem enviada. Retornarei o mais rápido possível.
                         </div>
                     
                         <div class="container">
-                            <form>
-                                <label class="form-label" for="usuario_login">Nome:</label>
-                                <input class="form-control" type="text" id="usuario_login" />
+                            <form id="form">
+                                <label class="form-label" for="nome">Nome:</label>
+                                <input class="form-control" type="text" id="nome" name="nome" />
                                 <label class="form-label" for="email">E-mail:</label>
-                                <input class="form-control" type="email" id="email" />
+                                <input class="form-control" type="email" id="email" name="email" />
                                 <label class="form-label" for="mensagem">Mensagem:</label>
-                                <textarea id="mensagem" class="form-control" maxlength="200"></textarea>
+                                <textarea id="mensagem" class="form-control" maxlength="200" name="mensagem"></textarea>
                             </form>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button name="cancelar" type="button" class="btn-danger btn" data-bs-dismiss="modal">Cancelar</button>
-                        <button name="ok" type="button" class="btn-success btn" data-bs-dismiss="modal">Enviar</button>
+                        <button name="enviar" type="submit" class="btn-success btn" form="form">Enviar</button>
                     </div>
                 </div>
             </div>
