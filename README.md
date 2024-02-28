@@ -10,7 +10,7 @@ Projeto desenvolvido no curso de Full Stack Python da EBAC - Escola Britânica d
 
 Para executar o projeto, execute o comando:
 
-    npm run less
+  **``npm run less``**
 
 ## 🛠️Ferramentas utilizadas para construção do projeto
 
