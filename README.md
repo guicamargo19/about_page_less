@@ -1,6 +1,8 @@
 # About me Page
 
-<img src="./src/images/about.png">
+## Apresentação do projeto
+
+
 
 Projeto apresenta meu portfólio com foco na aplicação do pré-processador de CSS **LESS**.  Com uso de Mixins, Maps,
 Escapings, variáveis e divisão dos arquivos. E utilização do **Bootstrap** para criação de Modal como formulário

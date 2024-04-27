@@ -4,7 +4,7 @@
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
-.styleRepeat(@font: 24px, @mb: 8px) {
+.styleRepeat(@font: 24px, @mb: 14px) {
    font-size: @font;
    margin-bottom: @mb;
 }
@@ -70,7 +70,7 @@ li {
    justify-content: center;
    
    @media @breakpointMobile {
-      max-width: 70%;
+      max-width: 90%;
    }
 
    @media @breakpointTablet {
@@ -85,24 +85,62 @@ header {
       width: 190px;
       display: block;
       margin: 0 auto 24px;
-      padding-top: 16px;
+      padding-top: 24px;
    }
 }
 
 .profile-bio {
    text-align: center;
 
+   @media @breakpointMobile {
+      font-size: 11px;
+   }
+
    &-name {
       .styleRepeat();
+
+      @media @breakpointMobile {
+         .styleRepeat(15px);
+      }
    }
 
    &-subtitle {
       .styleRepeat(18px);
+      
+      @media @breakpointMobile {
+         .styleRepeat(12px);
+      }
    }
 
    &-description {
-      .styleRepeat(16px, 0);
+      text-align: justify;
+      text-indent: 24px;
+      .styleRepeat(16px, 16px);
       opacity: .7;
+      
+      @media @breakpointMobile {
+         .styleRepeat(12px);
+      }
+   }
+
+   .skills {
+      text-align: left;
+   }
+
+   .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 100px;
+
+      @media @breakpointMobile {
+         display: block;
+         padding-left: 0;
+      }
+   
+      @media @breakpointTablet {
+         display: block;
+         padding-left: 0;
+      }
    }
 }
 
@@ -137,12 +175,16 @@ header {
          text-align: center;
          color: #colors[textColor];
          font-weight: bold;
-         border-radius: 30px;
+         border-radius: 20px;
          border: 2px solid #colors[buttonColor];
          transition: all ease .3s;
 
+         @media @breakpointMobile {
+            padding: 12px 16px;
+            font-size: 14px;
+         }
+
          &:hover {
-            color: #colors[buttonColor];
             background-color: transparent;
          }
       }
@@ -151,12 +193,26 @@ header {
 
 .container-footer {
    text-align: center;
-   padding: 16px;
-   margin: 0;
+   padding: 40px;
 
    p {
       margin: 0;
       font-weight: bold;
+   }
+
+   a {
+      color: #colors[textColor];
+      text-decoration: none;
+      transition: all ease-in-out .3s;
+      
+      &:hover {
+         color: #colors[buttonColor];
+         transition: all ease-in-out .3s;
+      }
+   }
+
+   @media @breakpointMobile {
+      font-size: 14px;
    }
 }
 
